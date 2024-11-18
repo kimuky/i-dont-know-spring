@@ -1,17 +1,15 @@
-package com.example.idontknowspring.service;
+package com.example.idontknowspring.compositeKey.service;
 
-import com.example.idontknowspring.dto.PostRequestDto;
-import com.example.idontknowspring.entity.Post;
-import com.example.idontknowspring.entity.User;
-import com.example.idontknowspring.repository.PostRepository;
-import com.example.idontknowspring.repository.UserRepository;
+import com.example.idontknowspring.compositeKey.dto.PostRequestDto;
+import com.example.idontknowspring.compositeKey.entity.Post;
+import com.example.idontknowspring.compositeKey.entity.User;
+import com.example.idontknowspring.compositeKey.repository.PostRepository;
+import com.example.idontknowspring.compositeKey.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
-
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor

@@ -1,8 +1,8 @@
-package com.example.idontknowspring.service;
+package com.example.idontknowspring.compositeKey.service;
 
-import com.example.idontknowspring.dto.UserRequestDto;
-import com.example.idontknowspring.entity.User;
-import com.example.idontknowspring.repository.UserRepository;
+import com.example.idontknowspring.compositeKey.dto.UserRequestDto;
+import com.example.idontknowspring.compositeKey.entity.User;
+import com.example.idontknowspring.compositeKey.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

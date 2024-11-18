@@ -1,6 +1,6 @@
-package com.example.idontknowspring.entity;
+package com.example.idontknowspring.compositeKey.entity;
 
-import com.example.idontknowspring.dto.UserRequestDto;
+import com.example.idontknowspring.compositeKey.dto.UserRequestDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 

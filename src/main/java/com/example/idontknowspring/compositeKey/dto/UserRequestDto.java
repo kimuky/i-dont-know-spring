@@ -1,4 +1,4 @@
-package com.example.idontknowspring.dto;
+package com.example.idontknowspring.compositeKey.dto;
 
 import lombok.Getter;
 
