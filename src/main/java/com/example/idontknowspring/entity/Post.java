@@ -1,5 +1,6 @@
 package com.example.idontknowspring.entity;
 
+import com.example.idontknowspring.dto.PostRequestDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,11 +16,19 @@ public class Post extends  BaseEntity{
     @Column(nullable = false)
     private String title;
 
-    private String comments;
+    private String contents;
 
     @ManyToOne
     @Setter
     @JoinColumn(name = "user_id")
     private User user;
 
+    public Post(PostRequestDto requestDto) {
+        this.title = requestDto.getTitle();
+        this.contents = requestDto.getContents();
+    }
+
+    public Post() {
+
+    }
 }
