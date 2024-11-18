@@ -1,22 +1,30 @@
 package com.example.idontknowspring.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.example.idontknowspring.dto.UserRequestDto;
+import jakarta.persistence.*;
 import lombok.Getter;
-import lombok.NonNull;
 
 @Getter
 @Entity
 public class User extends BaseEntity{
 
     @Id
-    private Long id;
+    private String id;
 
     @Column(nullable = false)
     private String username;
 
     @Column(nullable = false)
     private String password;
+
+
+    public User(UserRequestDto requestDto) {
+        this.id = requestDto.getId();
+        this.username = requestDto.getUsername();
+        this.password = requestDto.getPassword();
+    }
+
+    public User() {
+
+    }
 }
