@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-@Entity
+@Entity(name = "post")
 public class Post extends  BaseEntity{
 
     @Id

@@ -1,6 +1,5 @@
 package com.example.idontknowspring.compositeKey.entity;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 
 import java.io.Serializable;
@@ -8,15 +7,13 @@ import java.io.Serializable;
 @Embeddable
 public class CommentId implements Serializable {
 
-    @Column(name = "user_id")
-    private String user_id;
+    private String userId;
 
-    @Column(name = "post_id")
-    private Long post_id;
+    private Long postId;
 
     public CommentId(String userId, Long postId) {
-        this.user_id = userId;
-        this.post_id = postId;
+        this.userId = userId;
+        this.postId = postId;
     }
 
     public CommentId() {

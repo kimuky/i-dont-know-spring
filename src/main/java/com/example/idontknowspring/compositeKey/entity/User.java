@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 
 @Getter
-@Entity
+@Entity(name = "user")
 public class User extends BaseEntity{
 
     @Id
@@ -16,7 +16,6 @@ public class User extends BaseEntity{
 
     @Column(nullable = false)
     private String password;
-
 
     public User(UserRequestDto requestDto) {
         this.id = requestDto.getId();
